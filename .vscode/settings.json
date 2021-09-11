@@ -1,0 +1,10 @@
+{
+    "search.useGlobalIgnoreFiles": true,
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 3,
+    "editor.cursorBlinking": "expand",
+    "workbench.colorCustomizations": {
+        
+        "editorCursor.foreground": "#ffc107"
+    }
+}

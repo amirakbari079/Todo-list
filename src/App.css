@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0e0a0b;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  width: 405px !important;
+  
+  margin: auto;
+  margin-top: 18vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-color {
+  background-color: rgb(35, 40, 44) !important;
+  border-radius: 15px !important;
+  min-height: 500px;
+  box-shadow: 0px 2px 0px 0px #ffc107 !important;
+  box-shadow: 2px 2px 0px 1px #ffc107 !important;
+}
+
+.title {
+  border-radius: 3px;
+  /* background: #6841db; */
+  color: white;
+  text-align: center;
+  font-family: "Roboto" !important;
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+
+.sub-title {
+  color: white;
+  text-align: center;
+  font-family: "Roboto" !important;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+
+
+
+.inputi {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid transparent !important;
+  border-left: 4px solid #ffc107 !important;
+  background-color: #393e42;
+  outline: none;
+  transition: border-bottom 0.5s ease-in 1ms;
+  transition: width 0.4s ease-in-out;
+
+  display: inline-block !important;
+  width: 200px !important;
+  margin-right: 15px;
+  padding-left: 6px;
+  padding-bottom: 2px;
+  color: #dfdedb;
+  border-radius: 2px ;
+  font-weight: lighter;
+  
+}
+
+.inputi:focus {
+  border-bottom: 2px solid #ffc107 !important;
+  box-shadow: 5px 5px 25px -5px rgba(255,230,55,0.80);
+  width: 220px !important;
+  border-radius: 3px !important ;
+}
+
+.add-btn {
+  display: inline-block !important;
+  box-shadow: 5px 5px 28px -9px rgba(118, 255, 55, 0.4) !important;  
+}
+
+.card-box {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.list{
+  color: #dfdedb;
+}
+
+
+ul{
+  width: 94%;
+
+}
+
+
+
+li{
+  margin-left: 22px;
+  padding: 2px 7px;
+  margin-bottom: 15px;
+  background-color: #393e42;
+  border-radius: 3px;
+  transition: all 1s ease-in-out;
+  
+  border-bottom: 1px solid #ffc107;
+  font-family: vazir !important;
+}
+
+li.show{
+  opacity: 1;
+}
+li:hover{
+  background-color: #454a4e;
+  padding: 4px;
+}
+
+
+span{
+  float: right;
+  margin-left: 7px;
+}
+
+i{
+  margin-left: 15px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.remove{
+  text-shadow: 0 0 10px rgba(185, 0, 0, 0.05);  
+
+}
+.remove:hover{
+  color: rgb(185, 0, 0);
+  text-shadow: 0 0 20px rgb(185, 0,0, 0.95);  
+
+}
+
+.check{
+  text-shadow: 0 0 10px rgb(3, 124, 0.05); 
+}
+.check:hover{
+  text-shadow: 0 0 10px rgb(3, 124, 3); 
+  color:rgb(3, 124, 3);
+}
+
+
+.complete{
+  text-decoration-line: line-through; 
+  opacity: 0.5;
+  background-color: rgba(0, 201, 50, 0.171) ;
+  border-bottom: 1px solid rgba(0, 201, 50, 0.973);
+}
+
