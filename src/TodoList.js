@@ -1,6 +1,8 @@
 import React from "react";
 
 export const TodoList = ({ tasks, setTask }) => {
+  const filtredTask = [...tasks];
+ 
   const completeTask = (task) => {
     const temp = [...tasks];
     const index = temp.findIndex((q) => q.id == task.id);
@@ -21,8 +23,18 @@ export const TodoList = ({ tasks, setTask }) => {
 
     }, 500);
   };
+
+  const doneFilter =()=>{
+    const items = filtredTask.filter((q) => q.isComplete == true);
+   
+
+  }
   return (
     <ul>
+            <div className="divContainer">
+              <div onClick={doneFilter}>Done</div>
+              <div>UnDone</div>
+            </div>
       {tasks.map((task, index) => (
         <div>
             
