@@ -4,6 +4,18 @@ header{
     height: 70px;
     background-color: rgb(35, 40, 44) ;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
+    
+}
+
+.item{
+    padding: 20px;
+}
+iframe{
+    width: 100px;
+}
+img{
+    border-radius: 50px;
+    margin:0 30px;
 }

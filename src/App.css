@@ -16,7 +16,8 @@ body {
   width: 405px !important;
   
   margin: auto;
-  margin-top: 18vh !important;
+  margin-top: 13vh !important;
+  margin-bottom: 20px !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,9 +164,24 @@ i{
 }
 
 .divContainer{
-  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #ffc107;
+  color: #dfdedb;
+  border-bottom: 2px solid #ffc107;
+  
+}
+
+.divContainer div{
+padding-bottom: 5px;
+border-bottom: solid 2px rgba(255, 0, 0, 0);
+margin-bottom: 20px;
+
+
+}
+
+.divContainer div:hover{
+  color: #ffeebb;
+  border-bottom: solid 3px #ffc107;
 }

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export const TodoList = ({ tasks, setTask }) => {
   const filtredTask = [...tasks];
- 
+  const [taskslist,setTasksList]=useState([...tasks])
+  useEffect(() => {
+    setTasksList(filtredTask)
+  }, [tasks])
   const completeTask = (task) => {
     const temp = [...tasks];
     const index = temp.findIndex((q) => q.id == task.id);
@@ -26,16 +29,25 @@ export const TodoList = ({ tasks, setTask }) => {
 
   const doneFilter =()=>{
     const items = filtredTask.filter((q) => q.isComplete == true);
-   
+   setTasksList(items)
+  }
 
+  const UnDoneFilter =()=>{
+    const items = filtredTask.filter((q) => q.isComplete == false);
+   setTasksList(items)
+  }
+
+  const allTasks =()=>{
+   setTasksList([...tasks])
   }
   return (
     <ul>
             <div className="divContainer">
+              <div onClick={allTasks}>All</div>
               <div onClick={doneFilter}>Done</div>
-              <div>UnDone</div>
+              <div onClick={UnDoneFilter}>UnDone</div>
             </div>
-      {tasks.map((task, index) => (
+      {taskslist.map((task, index) => (
         <div>
             
           <li className={task.isComplete ? "complete" : ""} key={index}>

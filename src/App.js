@@ -9,8 +9,8 @@ import {
   Link,
   Routes,
 } from "react-router-dom";
-import DoneTasks from "./pages/DoneTasks";
-import UnDoneTasks from "./pages/UnDoneTasks";
+
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<CardContainer />} />
-        <Route path="/DoneTasks" element={<DoneTasks />} />
-        <Route path="/UnDoneTasks" element={<UnDoneTasks />} />
+        <Route path="/about-us" element={<AboutUs/>} />
+      
       </Routes>
     </>
   );
